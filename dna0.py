@@ -1,6 +1,5 @@
 def ascii_to_dna(text):
     text = text.upper()
-    # Define the mapping of ASCII to DNA triplets
     ascii_start = 32
     ascii_end = 126
     dna_triplets = [
@@ -12,15 +11,12 @@ def ascii_to_dna(text):
         'GGA', 'GGC', 'GGG', 'GGT', 'GTA', 'GTC', 'GTG', 'GTT',
         'TAA', 'TAC', 'TAG', 'TAT', 'TCA', 'TCC', 'TCG', 'TCT',
         'TGA', 'TGC', 'TGG', 'TGT', 'TTA', 'TTC', 'TTG', 'TTT'
-    ]  # Make sure there are exactly 95 elements here.
+    ]
 
-    # Convert text to ASCII values
     ascii_values = [ord(char) for char in text]
 
-    # Translate ASCII values to DNA
-    dna_sequence = ''
     for value in ascii_values:
-        if ascii_start <= value <= ascii_end:  # Ensure it's a mappable ASCII value
+        if ascii_start <= value <= ascii_end:
             index = value - ascii_start
             dna_sequence += dna_triplets[index]
         else:
@@ -28,7 +24,6 @@ def ascii_to_dna(text):
 
     return dna_sequence
 
-# Main function to handle command line interaction
 if __name__ == "__main__":
     import sys
     if len(sys.argv) != 2:
