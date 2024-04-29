@@ -26,7 +26,6 @@ def ascii_to_dna(text):
     for value in ascii_values:
         if ascii_start <= value <= ascii_end:  # Ensure it's a mappable ASCII value
             index = value - ascii_start
-            print("index=",index)
             dna_sequence += dna_triplets[index]
         else:
             raise ValueError(f"Character '{chr(value)}' at ASCII {value} out of mappable range 32-126")
