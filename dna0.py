@@ -1,5 +1,5 @@
 def ascii_to_dna(text):
-    text = text.lower()
+    text = text.upper()
     # Define the mapping of ASCII to DNA triplets
     ascii_start = 32
     ascii_end = 126
@@ -12,10 +12,6 @@ def ascii_to_dna(text):
         'GGA', 'GGC', 'GGG', 'GGT', 'GTA', 'GTC', 'GTG', 'GTT',
         'TAA', 'TAC', 'TAG', 'TAT', 'TCA', 'TCC', 'TCG', 'TCT',
         'TGA', 'TGC', 'TGG', 'TGT', 'TTA', 'TTC', 'TTG', 'TTT'
-        'AAA', 'AAC', 'AAG', 'AAT', 'ACA', 'ACC', 'ACG', 'ACT',
-        'AGA', 'AGC', 'AGG', 'AGT', 'ATA', 'ATC', 'ATG', 'ATT',
-        'CAA', 'CAC', 'CAG', 'CAT', 'CCA', 'CCC', 'CCG', 'CCT',
-        'CGA', 'CGC', 'CGG', 'CGT', 'CTA', 'CTC', 'CTG', 'CTT',
     ]  # Make sure there are exactly 95 elements here.
 
     # Convert text to ASCII values

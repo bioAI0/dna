@@ -36,3 +36,5 @@ DNA Sequence: ATAACGCCGATTCGACAACAAATAAAAATAAGGATG
 % p dna0.py "keunwook kim"
 DNA Sequence: ATAACGCCGATTCGACAACAAATAAAAATAAGGATG
 
+
+% p dna0.py "keunwook kim"
